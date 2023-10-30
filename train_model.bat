@@ -1,0 +1,1 @@
+onmt_train -config model.yaml

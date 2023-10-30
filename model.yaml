@@ -1,0 +1,25 @@
+save_data: Run/example
+
+src_vocab: Run/example.vocab.src
+tgt_vocab: Run/example.vocab.tgt
+
+overwrite: False
+
+data:
+  corpus_1:
+    path_src: Data/src_train.txt
+    path_tgt: Data/tgt_train.txt
+  valid:
+    path_src: Data/src_val.txt
+    path_tgt: Data/tgt_val.txt
+
+src_vocab: Run/example.vocab.src
+tgt_vocab: Run/example.vocab.tgt
+
+world_size: 1
+gpu_ranks: [0]
+
+save_model: Run/model
+save_checkpoint_steps: 500
+train_steps: 1000
+valid_steps: 500
